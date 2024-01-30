@@ -1,0 +1,27 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store
+
+# Project exclude paths
+/betterpickers/build/intermediates/assets/
+/betterpickers/build/intermediates/blame/
+/betterpickers/build/intermediates/bundles/
+/betterpickers/build/intermediates/classes/
+/betterpickers/build/intermediates/classes/debug/
+/betterpickers/build/intermediates/incremental/
+/betterpickers/build/intermediates/incremental-safeguard/
+/betterpickers/build/intermediates/res/
+/betterpickers/build/intermediates/symbols/
+/betterpickers/build/outputs/
+/libraries/facebook/build/intermediates/blame/
+/libraries/facebook/build/intermediates/bundles/
+/libraries/facebook/build/intermediates/classes/
+/libraries/facebook/build/intermediates/classes/debug/
+/libraries/facebook/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/
+/libraries/facebook/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/
+/libraries/facebook/build/intermediates/incremental/
+/libraries/facebook/build/intermediates/incremental-safeguard/
+/libraries/facebook/build/intermediates/res/
+/libraries/facebook/build/intermediates/symbols/
+/libraries/facebook/build/outputs/

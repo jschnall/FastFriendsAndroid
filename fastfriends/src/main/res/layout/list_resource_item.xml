@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.AlbumFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="4dp"
+    android:paddingRight="16dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp">
+
+    <ImageView
+        android:id="@+id/portrait"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_picture"
+        android:background="@color/light_grey"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/portrait"
+        android:layout_alignTop="@id/portrait"
+        android:layout_alignBottom="@id/portrait"
+        android:gravity="top"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textAppearance="@style/Text.Muted"
+        />
+
+    <View
+        android:id="@+id/selector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignLeft="@id/portrait"
+        android:layout_alignRight="@id/portrait"
+        android:layout_alignTop="@id/portrait"
+        android:layout_alignBottom="@id/portrait"
+        android:background="@drawable/grid_item_selector"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

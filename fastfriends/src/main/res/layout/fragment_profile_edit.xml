@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.activity.profile_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin" >
+
+        <view
+            class="com.fastfriends.android.view.FFEditText"
+            android:id="@+id/display_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapSentences"
+            android:hint="@string/prompt_display_name"
+            android:ems="10" />
+
+        <RelativeLayout
+            android:id="@+id/birthday_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_birthday"
+                android:textColor="@color/medium_grey"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="bottom"
+                style="?android:attr/spinnerStyle" />
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation='horizontal'
+            android:paddingTop="16dp">
+
+            <RadioButton
+                android:id="@+id/gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"/>
+
+            <RadioButton
+                android:id="@+id/gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:drawablePadding="16dp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <view
+                class="com.fastfriends.android.view.FFEditText"
+                android:id="@+id/first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textCapSentences"
+                android:hint="@string/prompt_first_name"
+                android:ems="10"
+                android:layout_weight="1"/>
+
+            <view
+                class="com.fastfriends.android.view.FFEditText"
+                android:id="@+id/last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textCapSentences"
+                android:hint="@string/prompt_last_name"
+                android:ems="10"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <view
+            class="com.fastfriends.android.view.FFEditText"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/prompt_email"
+            android:ems="10" />
+
+        <view
+            class="com.fastfriends.android.view.FFEditText"
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:hint="@string/prompt_about"
+            android:layout_below="@+id/email"/>
+    </LinearLayout>
+</ScrollView>

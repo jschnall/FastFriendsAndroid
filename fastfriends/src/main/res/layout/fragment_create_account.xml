@@ -1,0 +1,172 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.CreateAccountFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin" >
+
+        <view
+            class="com.fastfriends.android.view.FFEditText"
+            android:id="@+id/display_name"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:nextFocusForward="@+id/email"
+            android:hint="@string/prompt_display_name"
+            android:textColorHint="@color/text_secondary"
+            android:maxLength="@integer/display_name_max_length"/>
+
+        <view
+            class="com.fastfriends.android.view.FFEditText"
+            android:id="@+id/email"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:nextFocusForward="@+id/password"
+            android:textColorHint="@color/text_secondary"
+            android:hint="@string/prompt_email" />
+
+        <view
+            class="com.fastfriends.android.view.FFEditText"
+            android:id="@+id/password"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"
+            android:imeActionLabel="@string/action_sign_in"
+            android:imeActionId="@+id/sign_in"
+            android:imeOptions="actionUnspecified"
+            android:textColorHint="@color/text_secondary"
+            android:maxLength="@integer/password_max_length"/>
+
+        <CheckBox
+            android:id="@+id/show_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <view
+                class="com.fastfriends.android.view.FFEditText"
+                android:id="@+id/first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPersonName|textCapSentences"
+                android:nextFocusForward="@+id/last_name"
+                android:hint="@string/prompt_first_name"
+                android:textColorHint="@color/text_secondary"
+                android:maxLength="@integer/name_max_length" />
+            <view
+                class="com.fastfriends.android.view.FFEditText"
+                android:id="@+id/last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPersonName|textCapSentences"
+                android:hint="@string/prompt_last_name"
+                android:textColorHint="@color/text_secondary"
+                android:maxLength="@integer/name_max_length" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_birthday"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="bottom"
+                style="?android:attr/spinnerStyle" />
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation='horizontal'
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:id="@+id/gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"/>
+
+            <RadioButton
+                android:id="@+id/gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:drawablePadding="10dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Muted"
+            android:text="@string/conditions_create_account"
+            android:paddingTop="20dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            />
+
+        <Button android:id="@+id/create_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/action_create_account"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_text"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:textAppearance="@style/Text.Muted"
+            />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.ProfileDetailsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/portrait"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/light_grey"
+                android:scaleType="centerCrop"
+                />
+
+            <View
+                android:id="@+id/scrim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/display_name"
+                android:layout_alignBottom="@id/portrait"
+                android:background="@drawable/scrim_bottom_dark"
+                />
+
+            <View
+                android:id="@+id/anchor"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/floating_action_button_half"
+                android:layout_alignBottom="@id/portrait"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/action_button"
+                android:layout_width="@dimen/floating_action_button"
+                android:layout_height="@dimen/floating_action_button"
+                android:background="@drawable/floating_action_button"
+                android:src="@drawable/ic_action_chat"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_alignTop="@id/anchor"/>
+
+            <ImageButton
+                android:id="@+id/action_button_fit"
+                android:layout_width="@dimen/floating_action_button"
+                android:layout_height="@dimen/floating_action_button"
+                android:background="@drawable/floating_action_button"
+                android:src="@drawable/ic_action_fit"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/action_button"
+                android:layout_marginRight="16dp"
+                android:layout_alignTop="@id/anchor"/>
+
+            <TextView
+                android:id="@+id/display_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.White.Title"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_alignParentLeft="true"
+                android:layout_above="@+id/age"
+                android:layout_marginLeft="16dp"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.White.Large"
+                android:layout_alignBottom="@+id/portrait"
+                android:layout_alignParentLeft="@+id/portrait"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/age_gender_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.White.Large"
+                android:layout_toRightOf="@+id/age"
+                android:layout_alignBaseline="@+id/age"
+                android:text="/"
+                android:paddingBottom="16dp"
+                />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.White.Large"
+                android:layout_alignBottom="@+id/portrait"
+                android:layout_toRightOf="@+id/age_gender_divider"
+                android:paddingBottom="16dp"
+                />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.Muted.Large"
+                android:layout_below="@+id/gender"
+                android:layout_toRightOf="@+id/portrait" />
+
+            <TextView
+                android:id="@+id/about_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.Large"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/portrait"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="@string/title_about" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.Muted"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/about_title"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                />
+
+
+            <TextView
+                android:id="@+id/reliability_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.Large"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/about"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="@string/title_reliability" />
+
+            <SeekBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:id="@+id/reliability"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/reliability_title"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/reliability_bar"
+                android:thumb="@drawable/reliability_bar_thumb"
+                />
+
+            <ImageView
+                android:id="@+id/reliability_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reliability_title"
+                android:layout_toRightOf="@+id/reliability"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ic_action_help"
+                />
+
+            <TextView
+                android:id="@+id/mutual_friends_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.Large"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/reliability"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:maxLines="2"
+                android:text="@string/title_mutual_friends" />
+
+            <it.sephiroth.android.library.widget.HListView
+                android:id="@+id/mutual_friends"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/mutual_friends_title"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:listSelector="@drawable/selector_transparent"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    >
+
+    <com.makeramen.RoundedImageView
+        android:id="@+id/portrait"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:corner_radius="28dp"
+        app:oval="true"
+        android:background="@drawable/circle_bg"
+        app:border_color="@color/light_grey"
+        app:border_width="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Text.Large"
+        android:layout_toRightOf="@id/portrait"
+        android:layout_toLeftOf="@+id/close_checkbox"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:lines="1"
+        android:ellipsize="end"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:id="@+id/friend_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Text"
+        android:layout_toRightOf="@id/portrait"
+        android:layout_toLeftOf="@+id/close_checkbox"
+        android:layout_below="@id/display_name"
+        android:layout_alignWithParentIfMissing="true"
+        android:lines="1"
+        android:ellipsize="end"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"/>
+
+    <CheckBox
+        android:id="@+id/close_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:drawableLeft="@drawable/btn_star"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <ImageView
+        android:id="@+id/selector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignLeft="@id/portrait"
+        android:layout_alignRight="@id/portrait"
+        android:layout_alignTop="@id/portrait"
+        android:layout_alignBottom="@id/portrait"
+        android:background="@drawable/circle_selector"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

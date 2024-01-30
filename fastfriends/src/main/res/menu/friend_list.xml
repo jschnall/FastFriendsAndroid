@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.FriendListFragment" >
+    <item android:id="@+id/action_search"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_search"/>
+    <item android:id="@+id/action_invite"
+        android:title="@string/invite_contacts"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_social_share"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
+    <item android:id="@+id/action_import"
+        android:title="@string/import_contacts"
+        android:icon="@drawable/ic_action_social_add_group"
+        app:showAsAction="ifRoom"/>
+</menu>

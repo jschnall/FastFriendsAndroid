@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.CreateAccountFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin">
+
+    <view
+        class="com.fastfriends.android.view.FFEditText"
+        android:id="@+id/email"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/prompt_email"
+        android:enabled="false"/>
+
+    <view
+        class="com.fastfriends.android.view.FFEditText"
+        android:id="@+id/password"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:imeActionLabel="@string/action_sign_in"
+        android:imeActionId="@+id/sign_in"
+        android:imeOptions="actionUnspecified" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:gravity="right"
+        android:padding="10dp"
+        android:textColor="@color/dark_orange"
+        />
+</LinearLayout>

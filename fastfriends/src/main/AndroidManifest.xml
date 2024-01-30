@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fastfriends.android"
+    android:versionCode="13"
+    android:versionName="1.0.11" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <!-- Google Cloud Messaging -->
+    <permission
+        android:name="com.fastfriends.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.fastfriends.gcm.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Google Maps V2 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.fastfriends.android.FastFriendsApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.App" >
+
+
+        <!-- Facebook -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <!-- Google Analytics Version v4 needs this value for easy tracking -->
+        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/global_tracker" />
+
+        <!-- Google Play Services: Admob, Google+ -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Google Cloud Messaging -->
+        <receiver
+            android:name="com.fastfriends.android.receiver.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.fastfriends.gcm" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.fastfriends.action.gcm.message" />
+                <action android:name="com.fastfriends.action.gcm.comment" />
+                <action android:name="com.fastfriends.action.gcm.event_update" />
+                <action android:name="com.fastfriends.action.gcm.event_checkin" />
+                <action android:name="com.fastfriends.action.gcm.event_cancel" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Google Maps V2 -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="" />
+
+        <service android:name="com.fastfriends.android.service.GcmIntentService" />
+        <service android:name="com.fastfriends.android.service.FastFriendsService" />
+
+        <activity android:name="com.facebook.LoginActivity" />
+        <activity
+            android:name="com.fastfriends.android.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.AuthenticationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.EditEventActivity"
+            android:label="@string/title_activity_edit_event"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.EventActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_event"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.ConversationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_conversation"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.EditProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_edit_profile"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.SlideShowActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_slide_show"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/Theme.OverlayActionBar">
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.AlbumActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_select_portrait"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.MapActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_map_activity"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.ProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:launchMode="singleTop"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.EditPlanActivity"
+            android:label="@string/title_activity_edit_plan"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.PlanActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_plan"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.fastfriends.android.activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.fastfriends.android.activity.FriendListActivity"
+            android:label="@string/title_friend_list"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <activity
+            android:name="com.fastfriends.android.activity.EventMemberListActivity"
+            android:label="@string/title_event_member_list"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <activity
+            android:name="com.fastfriends.android.activity.FitActivity"
+            android:label="@string/title_fit"
+            android:parentActivityName="com.fastfriends.android.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+        <!-- Used for Google Play Store Campaign Measurement-->
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

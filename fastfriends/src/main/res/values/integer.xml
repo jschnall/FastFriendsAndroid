@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="event_name_max_length">100</integer>
+    <integer name="event_description_max_length">1000</integer>
+    <integer name="caption_max_length">100</integer>
+    <integer name="comment_max_length">160</integer>
+    <integer name="message_max_length">255</integer>
+    <integer name="collapsed_description_lines">4</integer>
+    <integer name="collapsed_comment_lines">1</integer>
+    <integer name="plan_text_max_length">160</integer>
+
+    <integer name="name_min_length">1</integer>
+    <integer name="name_max_length">128</integer>
+
+    <integer name="display_name_min_length">1</integer>
+    <integer name="display_name_max_length">64</integer>
+
+    <integer name="password_min_length">6</integer>
+    <integer name="password_max_length">255</integer>
+
+    <integer name="hashtag_min_length">2</integer>
+    <integer name="hashtag_max_length">129</integer>
+
+    <integer name="mention_min_length">2</integer>
+    <integer name="mention_max_length">65</integer>
+
+</resources>

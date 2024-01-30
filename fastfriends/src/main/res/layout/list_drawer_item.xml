@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/app_list_selector_holo_light">
+
+    <com.makeramen.RoundedImageView
+        android:id="@+id/portrait"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"
+        app:corner_radius="36dp"
+        app:oval="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_bg"
+        app:border_color="@color/light_grey"
+        app:border_width="1dp"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:textAppearance="@style/Text.White.Large"
+        android:lines="1"
+        android:ellipsize="end"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:textAppearance="@style/Text"
+        android:lines="1"
+        android:ellipsize="end"
+        android:drawablePadding="16dp"
+        android:textColor="@color/drawer_text_selector"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@style/Text.Large"
+        android:background="@drawable/message_count_bg"
+        android:layout_marginRight="16dp"/>
+
+</LinearLayout>

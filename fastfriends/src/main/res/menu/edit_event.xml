@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.EditEventFragment" >
+    <item android:id="@+id/action_cancel"
+        android:title="@string/cancel"
+        android:icon="@drawable/ic_action_cancel"
+        app:showAsAction="always|withText"
+        />
+    <item android:id="@+id/action_done"
+        android:title="@string/action_done"
+        android:icon="@drawable/ic_action_accept"
+        app:showAsAction="always|withText"
+        />
+    <item android:id="@+id/action_more"
+        android:title="@string/more"
+        android:icon="@drawable/ic_action_accept"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/action_less"
+        android:title="@string/less"
+        android:icon="@drawable/ic_action_accept"
+        app:showAsAction="never"
+        />
+
+</menu>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fast Friends</string>
+
+    <!-- Facebook -->
+    <string name="facebook_app_id"></string>
+
+    <!-- Authentication -->
+    <string name="title_activity_authentication">Welcome</string>
+    <string name="or">OR</string>
+    <string name="create_account_button">Create account</string>
+    <string name="sign_in_text">Already have an account? &lt;font color="#ff8800">Sign In&lt;/font></string>
+    <string name="error_refresh_auth">Can\'t refresh auth token.</string>
+
+    <!-- Create Account -->
+    <string name="action_create_account">Get Started</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_first_name">First name</string>
+    <string name="prompt_last_name">Last name</string>
+    <string name="prompt_birthday">Birthday</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="progress_creating_account">Creating account…</string>
+    <string name="error_first_name_required">First name can\'t be blank.</string>
+    <string name="error_last_name_required">Last name can\'t be blank.</string>
+    <string name="error_email_required">Email can\'t be blank.</string>
+    <string name="error_email_invalid">Please enter a valid email address.</string>
+    <string name="error_email_length">Email must be at least 6 characters.</string>
+    <string name="error_password_required">Password can\'t be blank.</string>
+    <string name="error_password_length">Password must be at least 6 characters.</string>
+    <string name="error_gender_required">Please select your gender.</string>
+    <string name="error_birthday_required">Please select your birthday.</string>
+    <string name="error_name_invalid">Names can\'t contain whitespace</string>
+    <string name="error_display_name_invalid">Please enter a valid email address.</string>
+    <string name="error_display_name_length">Display name must be at most 128 characters.</string>
+    <string name="conditions_create_account">By tapping \"Get Started\" below, you confirm that you have accepted the &lt;a href="http://fastfriends.com/pages/terms">Terms of Service&lt;/a> and &lt;a href="http://fastfriends.com/pages/privacy">Privacy Policy&lt;/a>.</string>
+    <string name="show_password">Show password</string>
+    <string name="error_email_taken">This email is already in use.</string>
+    <string name="error_display_name_taken">This name is already in use.</string>
+    <string name="dialog_email_exists_title">Sign In</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_google_plus">Sign in with Google+</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="error_unknown">Request failed. Please try again later.</string>
+    <string name="error_connection_timed_out">Connection timed out.</string>
+    <string name="error_no_connection">No connection available. Please try again later.</string>
+
+    <!-- Sign In -->
+    <string name="action_sign_in">Sign in</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="progress_signing_in">Signing in…</string>
+    <string name="create_account">Create account</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="conditions_sign_in">By tapping \"Sign In\" below, you confirm that you have accepted the &lt;a href="http://fastfriends.com/pages/terms">Terms of Service&lt;/a> and &lt;a href="http://fastfriends.com/pages/privacy">Privacy Policy&lt;/a>.</string>
+    <string name="dialog_sign_in_title">Sign In</string>
+    <string name="dialog_sign_in_failed_title">Sign In Failed</string>
+    <string name="dialog_sign_in_failed_message">Invalid credentials.</string>
+
+    <!-- Forgot Password -->
+    <string name="reset_password">Reset password</string>
+    <string name="progress_please_wait">Please wait…</string>
+    <string name="forgot_password_success">Email sent</string>
+
+    <!-- MainActivity -->
+    <string name="action_create_event">Create</string>
+    <string name="action_search">Search</string>
+    <string name="title_event_list">Events</string>
+    <string name="title_search_events">Search Events</string>
+    <string name="title_messages">Messages</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="progress_signing_out">Signing out…</string>
+    <string name="database_in_use">Database in use, please wait a few moments and try again.</string>
+
+    <!-- EditEventActivity -->
+    <string name="title_activity_add_event">Add Event</string>
+    <string name="title_activity_edit_event">Edit Event</string>
+    <string name="prompt_event_name">Title</string>
+    <string name="prompt_location">Location</string>
+    <string name="prompt_start">From</string>
+    <string name="prompt_end">To</string>
+    <string name="prompt_tags">Categories</string>
+    <string name="prompt_description">Description</string>
+    <string name="action_done">Done</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="dialog_pick_tags_title">Pick Categories</string>
+    <string name="progress_saving_event">Saving event…</string>
+    <string name="error_event_name_required">Event name can\'t be blank.</string>
+    <string name="error_location_required">Location required.</string>
+    <string name="error_invalid_start_date">Events can\'t begin in the past.</string>
+    <string name="error_invalid_start_time">Events must be created at least 30 minutes in advance.</string>
+    <string name="error_invalid_end_date">Event can\'t end before it begins.</string>
+    <string name="error_invalid_end_time">Event can\'t end before it begins.</string>
+    <string name="dialog_confirm_discard_event_title">Discard Event?</string>
+    <string name="dialog_confirm_discard_event_message">Your changes will be lost.</string>
+    <string name="dialog_confirm_discard_event_negative">Cancel</string>
+    <string name="dialog_confirm_discard_event_positive">Discard</string>
+    <string name="picked_tags_hint">Select categories below</string>
+    <string name="member_limit">Max Members</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
+
+    <!-- Profile -->
+    <string name="title_activity_profile">Profile</string>
+    <string name="action_edit_profile">Edit</string>
+    <string name="private_title">Private</string>
+    <string name="action_message">Send message</string>
+    <string name="title_mutual_friends">Mutual Friends (%d)</string>
+    <string name="title_my_profile">My Profile</string>
+    <string name="title_profile">%1$s\'s profile</string>
+    <string name="title_history">History</string>
+    <string name="title_interests">Interests</string>
+    <string name="title_about">About Me</string>
+    <string name="updated">Updated</string>
+    <string name="profile_help">Use #tags to indicate activities that interest you.  Add @mentions to link to other users.</string>
+    <string name="add_friend">Add friend</string>
+    <string name="friend_added">Friend added</string>
+
+    <!-- EventActivity -->
+    <string name="title_activity_event">Event</string>
+    <string name="title_details">Details</string>
+    <string name="title_album">Album</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_invite">Invite</string>
+    <string name="title_comments">Comments</string>
+    <string name="hint_add_comment">Add a comment</string>
+    <string name="action_add_comment">Comment</string>
+    <string name="days_short">%dd</string>
+    <string name="hours_short">%dh</string>
+    <string name="minutes_short">%dm</string>
+
+    <plurals name="hours_medium">
+        <item quantity="one">%d hr</item>
+        <item quantity="other">%d hrs</item>
+    </plurals>
+
+    <plurals name="minutes_medium">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d mins</item>
+    </plurals>
+
+    <string name="days">%d days ago</string>
+    <string name="hours_ago">%d hours ago</string>
+    <string name="minutes_ago">%d minutes ago</string>
+    <string name="less_than_1_minute_ago">&lt;1 minute ago</string>
+    <string name="less_than_1_minute_short">&lt;1m</string>
+    <string name="comment_options">Comment options</string>
+    <string name="edit_comment">Edit comment</string>
+    <string name="prompt_comment">Comment</string>
+    <string name="edited">(Edited)</string>
+    <string name="action_check_in">Check in</string>
+    <string name="action_set_promo">Set promo</string>
+    <string name="event_subtitle">By %1$s &#8212; %2$s</string>
+    <string name="event_import_subtitle">Imported from %1$s</string>
+    <string name="members_title">Who\'s going (%1$d):</string>
+    <string name="members_title_past">Who went (%1$d):</string>
+    <string name="accepted_member_title">Confirmed (%1$d)</string>
+    <string name="invited_member_title">Invited (%1$d)</string>
+    <string name="requested_member_title">Want to join (%1$d)</string>
+    <string name="friend_title">Friends (%1$d)</string>
+    <string name="acquaintance_title">Acquaintances (%1$d)</string>
+    <string name="other_title">Other (%1$d)</string>
+    <string name="friend_count">x %1$d</string>
+    <plurals name="mutual_friends">
+        <item quantity="one">%d mutual friend</item>
+        <item quantity="other">%d mutual friends</item>
+    </plurals>
+
+    <string name="owner">(Host)</string>
+    <string name="requested">(Requested)</string>
+    <string name="invited">(Invited)</string>
+    <string name="invited_by">Invited by:</string>
+    <string name="price_hint">Price</string>
+    <string name="free">Free</string>
+    <string name="join_event">Join event</string>
+    <string name="leave_event">Leave event</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="join">Join</string>
+    <string name="event_date_time">%1$s at %2$s</string>
+
+    <string name="dialog_invite_friends_title">Select friends</string>
+    <string name="invite_button">Invite</string>
+    <string name="action_cancel_event">Cancel event</string>
+    <string name="dialog_confirm_cancel_event_title">Are you sure?</string>
+    <string name="dialog_confirm_cancel_event_message">Canceling an event is permanent.</string>
+    <string name="dialog_confirm_cancel_event_negative">No</string>
+    <string name="dialog_confirm_cancel_event_positive">Yes</string>
+    <string name="canceled">Canceled</string>
+
+
+    <!-- MessageCategoryFragment -->
+    <string name="title_received">Received</string>
+    <string name="title_sent">Sent</string>
+    <string name="title_drafts">Drafts</string>
+    <string name="action_friends">Friends</string>
+
+    <!-- ConversationListFragment -->
+    <string name="action_delete">Delete</string>
+
+    <!-- ConversationActivity -->
+    <string name="title_activity_conversation">New Conversation</string>
+    <string name="hint_send_message">Send message</string>
+    <string name="action_send_message">Send</string>
+    <string name="conversation_title">Conversation with %1$s</string>
+
+
+    <!-- EditProfileActivity -->
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="prompt_display_name">Username</string>
+    <string name="prompt_gender">Gender</string>
+    <string name="prompt_interests">Interests</string>
+    <string name="prompt_about">About</string>
+    <string name="error_display_name_required">Display name can\'t be blank.</string>
+    <string name="progress_saving_profile">Saving profile…</string>
+
+    <!-- AlbumFragment -->
+    <string name="action_add_resource">Add</string>
+    <string name="action_set_cover">Set cover</string>
+    <string name="action_set_portrait">Set portrait</string>
+    <string name="action_view_as_list">View as list</string>
+    <string name="action_view_as_grid">View as grid</string>
+
+    <string name="title_activity_slide_show">Slideshow</string>
+    <string name="caption_hint">Caption</string>
+
+    <plurals name="items_selected">
+        <item quantity="one">%d item selected</item>
+        <item quantity="other">%d items selected</item>
+    </plurals>
+
+    <!-- AlbumActivity -->
+    <string name="title_select_portrait">Select portrait</string>
+
+    <!-- Notifications -->
+    <string name="file">File</string>
+    <string name="notification_upload_title">Uploading %1$s</string>
+    <string name="notification_upload_queued_message">File queued</string>
+    <string name="notification_upload_started_message">Sending file…</string>
+    <string name="notification_upload_finished_message">File sent</string>
+    <string name="notification_upload_failed_message">Failed to send file</string>
+    <plurals name="notification_message_title">
+        <item quantity="one">New Message</item>
+        <item quantity="other">%d New Messages</item>
+    </plurals>
+    <string name="message_line">&lt;b>%1$s:&lt;/b> %2$s</string>
+    <string name="more_messages">+%d more</string>
+    <plurals name="notification_event_update_title">
+        <item quantity="one">Event Updated</item>
+        <item quantity="other">%d Event Updates</item>
+    </plurals>
+    <plurals name="notification_comment_title">
+        <item quantity="one">New Comment</item>
+        <item quantity="other">%d Comments</item>
+    </plurals>
+    <string name="event_comment_line">%1$s commented on %2$s</string>
+    <string name="plan_comment_line">%1$s commented on %2$s\'s plan</string>
+    <string name="notification_event_canceled_message">%1$s has been canceled</string>
+    <string name="notification_event_starting_message">%1$s at %2$s</string>
+    <string name="notification_friend_added_message">%1$s added you as a friend</string>
+
+    <!-- Map Activity -->
+    <string name="title_map_activity">Event Map</string>
+    <string name="maps_unavailable">Google Maps not available</string>
+    <string name="location_name_hint">Location name</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="action_set_marker">Set marker</string>
+
+    <!-- Search Activity -->
+    <string name="title_activity_search">Search</string>
+    <string name="search">Search</string>
+    <string name="search_events_hint">Name, location, or category</string>
+    <string name="action_filter">Filter</string>
+    <string name="dialog_filter_event_title">Filter Event</string>
+    <string name="dialog_filter_plan_title">Filter Plan</string>
+    <string name="title_date">Date</string>
+    <string name="title_price">Price</string>
+    <string name="title_category">Category</string>
+    <string name="title_distance">Distance</string>
+    <string name="title_location">Location</string>
+    <string name="title_size">Size</string>
+    <string name="hint_start_date">Starts</string>
+    <string name="hint_end_date">Ends</string>
+    <string name="hint_min_price">Min price</string>
+    <string name="hint_max_price">Max price</string>
+    <string name="hint_min_size">Min size</string>
+    <string name="hint_max_size">Max size</string>
+    <string name="kilometers">%1$s km</string>
+    <string name="miles">%1$s mi</string>
+    <string name="all_categories">(All categories)</string>
+    <string name="no_min">(No min)</string>
+    <string name="no_max">(No max)</string>
+
+    <!-- Friends -->
+    <string name="title_activity_friend_search">Friend Search</string>
+    <string name="title_friend_list">Friends</string>
+    <string name="search_friends_hint">Name, interest, or event</string>
+    <string name="import_contacts">Import friends</string>
+    <string name="dialog_contacts_import_title">Select Contacts</string>
+    <string name="import_button">Import</string>
+    <string name="friends_help">Acquaintances made at events are automatically added here.  * someone to indicate they are a close friend.</string>
+    <string name="progress_load_settings">Retrieving settings</string>
+    <string name="invite_contacts">Invite friends</string>
+    <string name="friends_not_found">Unable to find additional friends.  Why not invite some?</string>
+    <string name="invite_subject">Fast Friends Invite</string>
+    <string name="invite_message">Hello,\n\nOne of your friends has invited you to join them on Fast Friends.  You can download it here:\n\nhttps://play.google.com/store/apps/details?id=com.fastfriends.android</string>
+
+    <!-- Plans -->
+    <string name="title_plan">%1$s\'s Plan</string>
+    <string name="title_activity_plan">Plan</string>
+    <string name="title_activity_add_plan">Add Plan</string>
+    <string name="title_activity_edit_plan">Edit Plan</string>
+    <string name="progress_saving_plan">Saving plan…</string>
+    <string name="title_plan_list">Plans</string>
+    <string name="dialog_confirm_discard_plan_title">Discard Plan?</string>
+    <string name="dialog_confirm_discard_plan_message">Your changes will be lost.</string>
+    <string name="dialog_confirm_discard_plan_negative">Cancel</string>
+    <string name="dialog_confirm_discard_plan_positive">Discard</string>
+    <string name="error_plan_text_required">Plan text can\'t be blank.</string>
+    <string name="prompt_plan_text">What would you like to do?</string>
+    <string name="plan_text">&lt;font color="#3C3C3C">%1$s&lt;/font> &#8212;</string>
+    <string name="prompt_location_optional">Near location (optional)</string>
+    <string name="action_make_event">Make Event</string>
+
+    <string name="title_event_member_list">Event Members</string>
+    <string name="title_reliability">Reliability</string>
+    <string name="reliability_help">Whether a user shows up at events they sign up for</string>
+    <string name="title_fit">Fitness</string>
+    <string name="less_than_1_minute">&lt;1 min</string>
+    <string name="no_fit_data">No fit data available</string>
+    <string name="action_sync_fit">Sync fit data</string>
+</resources>

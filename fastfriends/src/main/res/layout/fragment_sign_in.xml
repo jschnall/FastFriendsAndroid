@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.CreateAccountFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="16dp">
+
+    <view
+        class="com.fastfriends.android.view.FFEditText"
+        android:id="@+id/email"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/prompt_email"
+        android:textColorHint="@color/text_secondary"
+        />
+
+    <view
+        class="com.fastfriends.android.view.FFEditText"
+        android:id="@+id/password"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:imeActionLabel="@string/action_sign_in"
+        android:imeActionId="@+id/sign_in"
+        android:imeOptions="actionUnspecified"
+        android:textColorHint="@color/text_secondary"
+        />
+
+    <TextView
+        android:id="@+id/conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Text.Muted"
+        android:text="@string/conditions_sign_in"
+        android:paddingTop="16dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        />
+
+    <Button android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/action_sign_in"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/dark_orange"
+        />
+</LinearLayout>

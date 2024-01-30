@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.dialog.EventFilterDialogFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_filter_event_title"
+        android:textAppearance="@style/Text.Muted.Title"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/activity_margin"
+        android:background="@drawable/dialog_title_bg"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_margin"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/title_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.Muted.Large"
+                android:text="@string/title_date"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_start_date"
+                    style="?android:attr/spinnerStyle" />
+
+                <Button
+                    android:id="@+id/end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_end_date"
+                    style="?android:attr/spinnerStyle" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textAppearance="@style/Text.Muted.Large"
+                android:text="@string/title_price"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/min_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_min_price"
+                    style="?android:attr/spinnerStyle" />
+
+                <Button
+                    android:id="@+id/max_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_max_price"
+                    style="?android:attr/spinnerStyle" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textAppearance="@style/Text.Muted.Large"
+                android:text="@string/title_location"/>
+
+            <Spinner
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:gravity="bottom"
+                android:lines="1"
+                android:ellipsize="end"
+                android:drawableRight="@drawable/ic_place"
+                style="?android:attr/spinnerStyle" />
+
+            <LinearLayout
+                android:id="@+id/distance_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/title_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Text.Muted.Large"
+                        android:text="@string/title_distance"/>
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Text.Large"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"/>
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/distance_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/title_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textAppearance="@style/Text.Muted.Large"
+                android:text="@string/title_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/min_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_min_size"
+                    style="?android:attr/spinnerStyle" />
+
+                <Button
+                    android:id="@+id/max_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_max_size"
+                    style="?android:attr/spinnerStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

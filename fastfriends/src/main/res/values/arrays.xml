@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_drawer_items">
+        <item>My profile</item>
+        <item>Plans</item>
+        <item>Events</item>
+        <item>Messages</item>
+        <item>Friends</item>
+        <item>Settings</item>
+        <item>Sign out</item>
+    </string-array>
+
+    <array name="navigation_drawer_icons">
+        <item>@null</item>
+        <item>@drawable/nav_plan</item>
+        <item>@drawable/nav_event</item>
+        <item>@drawable/nav_messages</item>
+        <item>@drawable/nav_friends</item>
+        <item>@drawable/nav_settings</item>
+        <item>@drawable/nav_sign_out</item>
+    </array>
+
+    <array name="event_category">
+        <item>Recommended</item>
+        <item>Close friends and theirs</item>
+        <item>All nearby</item>
+        <item>My events</item>
+    </array>
+
+    <array name="plan_category">
+        <item>Recommended</item>
+        <item>Close friends and theirs</item>
+        <item>Recently Created</item>
+    </array>
+
+    <array name="friend_category">
+        <item>Name</item>
+        <item>Close friends</item>
+        <item>Recently met</item>
+    </array>
+
+    <array name="event_member_category">
+        <item>All Members</item>
+        <item>Confirmed</item>
+        <item>Want to join</item>
+        <item>Invited</item>
+    </array>
+
+    <array name="search_category">
+        <item>Events</item>
+        <item>Plans</item>
+        <item>Profiles</item>
+    </array>
+
+    <array name="smooth_progress_colors">
+        <item>@color/dark_orange</item>
+    </array>
+
+    <array name="event_price_choices">
+        <item>Any price</item>
+        <item>Free only</item>
+    </array>
+
+    <array name="event_location_choices">
+        <item>My location</item>
+        <item>Select location...</item>
+    </array>
+
+    <array name="event_size_choices">
+        <item>Any size</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </array>
+
+    <array name="join_policy_choices">
+        <item>Anyone can join</item>
+        <item>Owner approval</item>
+        <item>Invite only</item>
+        <item>Owner Invite only</item>
+        <item>Friends only</item>
+    </array>
+
+    <array name="member_limit_choices">
+        <item>No member limit</item>
+        <item>Select max members...</item>
+    </array>
+
+    <array name="comment_options">
+        <item>Delete</item>
+        <item>Edit</item>
+    </array>
+
+    <array name="fit_history_category">
+        <item>This Week</item>
+        <item>This Month</item>
+        <item>This Year</item>
+    </array>
+
+
+</resources>

@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.EditEventFragment" >
+    <item android:id="@+id/action_delete"
+        android:title="@string/action_delete"
+        android:titleCondensed="@string/action_delete"
+        android:icon="@drawable/ic_action_discard"
+        app:showAsAction="always"
+        />
+    <!--
+    <item android:id="@+id/action_set_cover"
+        android:title="@string/action_set_cover"
+        android:titleCondensed="@string/action_set_cover"
+        android:icon="@drawable/ic_action_discard"
+        app:showAsAction="always"
+        />
+    -->
+    <item android:id="@+id/action_set_portrait"
+        android:title="@string/action_set_portrait"
+        android:titleCondensed="@string/action_set_portrait"
+        android:icon="@drawable/ic_action_person"
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/action_set_promo"
+        android:title="@string/action_set_promo"
+        android:titleCondensed="@string/action_set_promo"
+        android:icon="@drawable/ic_action_picture"
+        app:showAsAction="always"
+        />
+</menu>

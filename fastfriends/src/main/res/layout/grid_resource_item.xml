@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.AlbumFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/portrait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_picture"
+        android:adjustViewBounds="true"
+        android:background="@color/light_grey"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/portrait"
+        android:layout_alignRight="@id/portrait"
+        android:layout_alignBottom="@id/portrait"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:minLines="2"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textAppearance="@style/Text.Small"
+        android:textColor="@color/white"
+        android:gravity="bottom"
+        android:background="@drawable/scrim_bottom_dark"
+        />
+
+    <View
+        android:id="@+id/selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/portrait"
+        android:layout_alignRight="@id/portrait"
+        android:layout_alignTop="@id/portrait"
+        android:layout_alignBottom="@id/portrait"
+        android:background="@drawable/grid_item_selector"
+        android:visibility="gone"
+        />
+</RelativeLayout>

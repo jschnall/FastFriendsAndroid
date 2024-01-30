@@ -1,0 +1,110 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.AuthenticationFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:paddingTop="@dimen/activity_margin"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/title"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin">
+
+        <FrameLayout
+            android:id="@+id/facebook_login_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+        </FrameLayout>
+
+        <com.google.android.gms.common.SignInButton
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/google_plus_sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <!-- divider -->
+        <RelativeLayout
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/google_plus_sign_in_button"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            >
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@drawable/divider"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/or"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                />
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/text_secondary"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@drawable/divider"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/or"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                />
+        </RelativeLayout>
+
+
+        <Button android:id="@+id/create_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account_button"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_gravity="right"/>
+
+        <TextView
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_text"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:textAppearance="@style/Text.Muted"
+            android:paddingBottom="@dimen/activity_margin"
+            />
+
+    </LinearLayout>
+</LinearLayout>

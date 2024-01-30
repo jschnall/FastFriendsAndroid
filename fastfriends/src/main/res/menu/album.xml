@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.AlbumFragment" >
+    <item android:id="@+id/action_view_as_grid"
+        android:title="@string/action_view_as_grid"
+        android:icon="@drawable/ic_action_view_as_grid"
+        app:showAsAction="always|withText"
+        android:visible="false"
+        />
+    <item android:id="@+id/action_view_as_list"
+        android:title="@string/action_view_as_list"
+        android:icon="@drawable/ic_action_view_as_list"
+        app:showAsAction="always|withText"
+        android:visible="false"
+        />
+    <item android:id="@+id/action_add_resource"
+        android:title="@string/action_add_resource"
+        android:icon="@drawable/ic_action_new"
+        app:showAsAction="always|withText"
+        android:visible="false"
+        />
+</menu>

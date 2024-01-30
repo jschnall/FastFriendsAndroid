@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/card_gutter_horizontal"
+    android:paddingRight="@dimen/card_gutter_horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/inner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/activity_margin"
+        >
+
+        <com.makeramen.RoundedImageView
+            android:id="@+id/portrait"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:corner_radius="28dp"
+            app:oval="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/circle_bg"
+            app:border_color="@color/light_grey"
+            app:border_width="1dp"
+            />
+
+        <TextView
+            android:id="@+id/owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/portrait"
+            android:layout_toRightOf="@id/portrait"
+            android:layout_toLeftOf="@+id/edited"
+            android:layout_alignWithParentIfMissing="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/Text"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:textAppearance="@style/Text.Muted"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/owner"
+            android:layout_alignLeft="@+id/owner"
+            android:layout_toLeftOf="@+id/date"
+            android:layout_alignWithParentIfMissing="true"
+            android:textAppearance="@style/Text.Muted" />
+
+        <TextView
+            android:id="@+id/edited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/date"
+            android:layout_toLeftOf="@+id/date"
+            android:text="@string/edited"
+            android:layout_alignWithParentIfMissing="true"
+            android:textAppearance="@style/Text.Muted.XSmall"
+            android:paddingRight="4dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

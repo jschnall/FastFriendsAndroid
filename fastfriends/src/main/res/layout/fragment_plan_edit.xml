@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.EditPlanFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/location">
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_plan_text"
+            android:maxLength="@integer/plan_text_max_length"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textAppearance="@style/Text.Large"
+            android:textSize="24sp"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Muted.XSmall"
+            android:layout_gravity="right"
+            android:paddingRight="8dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_location_optional"
+        android:drawableRight="@drawable/ic_place"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:gravity="bottom"
+        android:lines="1"
+        android:ellipsize="end"
+        android:paddingLeft="16dp"
+        android:textAppearance="@style/Text.Large"
+        style="?android:attr/spinnerStyle" />
+</RelativeLayout>

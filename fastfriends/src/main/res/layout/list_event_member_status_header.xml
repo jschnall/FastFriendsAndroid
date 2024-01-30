@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.EventDetailsFragment"
+    android:id="@+id/status_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/selector_transparent"
+    android:clickable="true"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    >
+
+    <TextView
+        android:id="@+id/members_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Text.Bold"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/friend_count"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/acquaintance_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Text"
+        android:drawableLeft="@drawable/ic_action_group"
+        android:drawablePadding="4dp"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/friend_count"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/friend_count"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="@style/Text"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawableLeft="@drawable/ic_rating_important"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

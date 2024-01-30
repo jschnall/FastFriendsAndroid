@@ -1,0 +1,205 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fastfriends.android.fragment.EditEventFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin" >
+
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_event_name"
+            android:maxLength="@integer/event_name_max_length"
+            android:inputType="textCapSentences"
+            />
+
+        <Button
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:lines="1"
+            android:ellipsize="end"
+            android:drawableRight="@drawable/ic_place"
+            android:hint="@string/prompt_location"
+            android:textAppearance="@style/Text.Muted.Large"
+            style="?android:attr/spinnerStyle" />
+
+        <RelativeLayout
+            android:id="@+id/start_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_start"
+                android:textAppearance="@style/Text.Muted"
+                android:paddingLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <Button
+                    android:id="@+id/start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/Text.Large"
+                    style="?android:attr/spinnerStyle" />
+
+                <Button
+                    android:id="@+id/start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/Text.Large"
+                    style="?android:attr/spinnerStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/end_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_end"
+                android:textAppearance="@style/Text.Muted"
+                android:paddingLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                >
+
+                <Button
+                    android:id="@+id/end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textAppearance="@style/Text.Large"
+                    style="?android:attr/spinnerStyle" />
+
+                <Button
+                    android:id="@+id/end_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textAppearance="@style/Text.Large"
+                    style="?android:attr/spinnerStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_tags"
+            android:drawableRight="@drawable/ic_tags"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="bottom"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/Text.Large"
+            style="?android:attr/spinnerStyle" />
+
+        <Spinner
+            android:id="@+id/join_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/Text.Large"
+            />
+
+        <LinearLayout
+            android:id="@+id/member_limit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/member_limit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Text.Muted.Large"
+                android:text="@string/member_limit"/>
+
+            <Button
+                android:id="@+id/member_limit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="@style/Text.Large"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="bottom"
+                android:lines="1"
+                android:enabled="false"
+                android:layout_alignParentBottom="true"
+                style="?android:attr/spinnerStyle"/>
+
+            <CheckBox
+                android:id="@+id/member_limit_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/price_hint"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textAppearance="@style/Text.Large"
+            style="?android:attr/spinnerStyle"/>
+            />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/prompt_description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="@integer/event_description_max_length"/>
+    </LinearLayout>
+</ScrollView>

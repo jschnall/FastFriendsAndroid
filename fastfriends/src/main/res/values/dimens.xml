@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionbar_tab_height">64dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="tab_horizontal_padding">6dp</dimen>
+    <dimen name="tab_vertical_padding">12dp</dimen>
+
+    <dimen name="list_padding_vertical">8dp</dimen>
+    <dimen name="list_padding_horizontal">16dp</dimen>
+
+    <dimen name="card_corner_radius">2dp</dimen>
+
+    <!-- With dropshadow -->
+    <dimen name="card_gutter_horizontal">4dp</dimen>
+    <dimen name="card_gutter_vertical">0dp</dimen>
+    <dimen name="card_shadow">4dp</dimen>
+
+    <!-- Without dropshadow
+    <dimen name="card_gutter_horizontal">8dp</dimen>
+    <dimen name="card_gutter_vertical">4dp</dimen>
+    <dimen name="card_shadow">0dp</dimen>
+    -->
+
+    <dimen name="collapsed_comment_padding">1dp</dimen>
+
+    <!--
+     Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+     https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="navigation_drawer_width">280dp</dimen>
+
+
+    <!-- Without drop shadow
+    <dimen name="floating_action_button">56dp</dimen>
+    <dimen name="floating_action_button_half">28dp</dimen>
+    <dimen name="floating_action_button_mini">40dp</dimen>
+    -->
+
+    <!-- With drop shadow -->
+    <dimen name="floating_action_button">64dp</dimen>
+    <dimen name="floating_action_button_half">32dp</dimen>
+    <dimen name="floating_action_button_mini">48dp</dimen>
+    <dimen name="floating_action_button_mini_half">24dp</dimen>
+
+    <dimen name="list_child_indent">40dp</dimen>
+    <dimen name="tag_padding">4dp</dimen>
+
+    <dimen name="grid_column_width">128dp</dimen>
+    <dimen name="card_column_width">256dp</dimen>
+
+    <dimen name="text_shadow_radius">2dp</dimen>
+ </resources>

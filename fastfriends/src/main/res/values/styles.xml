@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.App" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Can use instead of NoActionbar -->
+        <item name="windowActionBar">false</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/medium_orange</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/dark_orange</item>
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/secondary_medium</item>
+        <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight, and colorSwitchThumbNormal. -->
+
+        <!-- Generated with Android Action Bar Style Generator -->
+        <item name="actionBarItemBackground">@drawable/selectable_background_app</item>
+        <item name="popupMenuStyle">@style/PopupMenu.App</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.App</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.App</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.App</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.App</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_app</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_app</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.App</item>
+        <!-- Light.DarkActionBar specific -->
+        <item name="actionBarWidgetTheme">@style/Theme.App.Widget</item>
+
+        <!-- Generated with http://android-holo-colors.com -->
+        <item name="android:editTextBackground">@drawable/app_edit_text_holo_light</item>
+        <item name="android:textColorHighlight">#99ffbb33</item>
+        <item name="android:textSelectHandleLeft">@drawable/app_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/app_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/app_text_select_handle_middle</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewApp</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/app_btn_check_holo_light</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/app_btn_radio_holo_light</item>
+        <item name="android:buttonStyle">@style/ButtonApp</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonApp</item>
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerApp</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarApp</item>
+        <item name="android:seekBarStyle">@style/SeekBarApp</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/app_list_selector_holo_light</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/app_activated_background_holo_light</item>
+
+        <!-- ActionBar PullToRefresh -->
+        <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+
+        <!-- ViewPagerIndicator -->
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+
+        <!--
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+        -->
+    </style>
+
+    <!--
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="closeIcon">@drawable/abc_ic_clear_mtrl_alpha</item>
+        <item name="searchIcon">@drawable/abc_ic_search_api_mtrl_alpha</item>
+        <item name="voiceIcon">@drawable/abc_ic_voice_search_api_mtrl_alpha</item>
+    </style>
+    -->
+
+    <style name="ActionBar.Solid.App" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/ab_solid_app</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_app</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_app</item>
+        <item name="progressBarStyle">@style/ProgressBar.App</item>
+    </style>
+
+    <style name="ActionBar.Transparent.App" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/ab_transparent_app</item>
+        <item name="progressBarStyle">@style/ProgressBar.App</item>
+    </style>
+
+    <style name="PopupMenu.App" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_app</item>
+    </style>
+
+    <style name="DropDownListView.App" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_app</item>
+    </style>
+
+    <style name="ActionBarTabStyle.App" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_app</item>
+    </style>
+
+    <style name="Actionbar.AutoCompleteTextView" parent="@style/Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <!-- UI components -->
+    <style name="DropDownNav.App" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_app</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_app</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_app</item>
+    </style>
+
+    <style name="ProgressBar.App" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_app</item>
+        <item name="android:indeterminateDrawable">@drawable/app_progress_indeterminate_horizontal_holo_light</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.App" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_app</item>
+    </style>
+
+    <style name="AutoCompleteTextViewApp" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/app_list_selector_holo_light</item>
+        <item name="android:background">@drawable/app_edit_text_holo_light</item>
+    </style>
+
+    <style name="ButtonApp" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/app_btn_default_holo_light</item>
+    </style>
+
+    <style name="ImageButtonApp" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/app_btn_default_holo_light</item>
+    </style>
+
+    <style name="SpinnerApp" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/app_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/app_list_selector_holo_light</item>
+    </style>
+
+    <style name="ProgressBarApp" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/app_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/app_progress_indeterminate_horizontal_holo_light</item>
+    </style>
+
+    <style name="SeekBarApp" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/app_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/app_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:thumb">@drawable/app_scrubber_control_selector_holo_light</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.App.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.App</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.App</item>
+    </style>
+
+    <!-- Overlay ActionBar theme for Slideshow -->
+    <style name="Theme.OverlayActionBar" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="ActionBar.Overlay" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/actionbar_overlay_bg</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Transparent.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBar.Transparent.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Text -->
+    <style name="Text" parent="android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="Text.Large" parent="Text">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Small" parent="Text">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.XSmall" parent="Text">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.Bold" parent="Text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Title" parent="Text.Bold">
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="Text.Muted" parent="Text">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="Text.Muted.Bold" parent="Text.Muted">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Muted.Title" parent="Text.Muted">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Muted.XLarge" parent="Text.Muted">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Muted.Large" parent="Text.Muted">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Muted.Small" parent="Text.Muted">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Muted.XSmall" parent="Text.Muted">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.White" parent="Text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.White.Small" parent="Text.White">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.White.XSmall" parent="Text.White">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.White.Large" parent="Text.White">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.White.Title" parent="Text.White">
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="Text.EventCanceled" parent="Text.Large">
+        <item name="android:textColor">@color/dark_orange</item>
+    </style>
+
+    <style name="EventListText" parent="android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <!-- ActionBar PullToRefresh -->
+    <style name="Widget.Custom.PtrHeader" parent="android:Widget">
+        <item name="ptrHeaderBackground">@color/medium_orange</item>
+        <item name="ptrProgressBarColor">@color/dark_orange</item>
+        <item name="ptrSmoothProgressBarStyle">@style/SmoothProgressBar.App</item>
+    </style>
+
+    <style name="SmoothProgressBar.App" parent="SmoothProgressBar">
+        <item name="spb_colors">@array/smooth_progress_colors</item>
+    </style>
+
+    <!-- ViewPagerIndicator -->
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/custom_tab_indicator</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:divider">@null</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+</resources>

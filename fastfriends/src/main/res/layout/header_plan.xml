@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.fastfriends.android.fragment.PlanFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/card_gutter_horizontal"
+    android:paddingRight="@dimen/card_gutter_horizontal"
+    android:paddingTop="@dimen/card_gutter_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/card_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <com.makeramen.RoundedImageView
+            android:id="@+id/portrait"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:corner_radius="28dp"
+            android:background="@drawable/circle_bg"
+            app:border_color="@color/light_grey"
+            app:border_width="1dip"
+            app:oval="true"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text"
+            android:layout_alignTop="@id/portrait"
+            android:layout_toRightOf="@id/portrait"
+            android:layout_toLeftOf="@+id/edited"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Muted"
+            android:layout_alignTop="@id/portrait"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Muted.Small"
+            android:layout_below="@id/owner"
+            android:layout_toRightOf="@id/portrait"
+            android:layout_toLeftOf="@+id/edited"
+            android:layout_alignWithParentIfMissing="true"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Large"
+            android:layout_below="@id/location"
+            android:layout_toRightOf="@id/portrait"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:id="@+id/edited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/date"
+            android:text="@string/edited"
+            android:layout_alignWithParentIfMissing="true"
+            android:textAppearance="@style/Text.Muted.XSmall"/>
+    </RelativeLayout>
+</RelativeLayout>
